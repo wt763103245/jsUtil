@@ -35,7 +35,7 @@
   "include": [
     // "js",
     "frameworks/cocos2d-html5/**/*.js",
-    "cocos2d-js/**/*.js",
+    "cocos2d_js/**/*.js",
     "**/*.js",
   ],
   //保存文件时自动进行编译

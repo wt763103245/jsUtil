@@ -2,14 +2,14 @@
  * @Author: 萌新王
  * @Date: 2023-07-19 12:23:07
  * @LastEditors: 萌新王
- * @LastEditTime: 2023-10-09 16:19:12
- * @FilePath: \OneDrive\util\js\wt_test.js
+ * @LastEditTime: 2023-10-24 20:13:17
+ * @FilePath: \OneDrive\util\js\cocos2d_js.js
  * @Email: 763103245@qq.com
  * @Qq: 763103245
  */
 //Ctrl+Win+i    添加页眉注释
 // import { notDeepEqual } from "assert";
-import { cocos2dJs } from "./cocos2d-js/class.js"
+import { cocos2dJs } from "./class.js"
 /**工具类
  * @param {object} UtilWt
  */

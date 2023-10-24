@@ -7,7 +7,7 @@
  * @Email: 763103245@qq.com
  * @Qq: 763103245
  */
-import { UtilWt } from '../cocos2d_js.js';
+import { UtilWt } from './cocos2d_js.js';
 //cocos2dJs 示例
 /**cc类 */
 export var cocos2dJs = cocos2dJs || {};
