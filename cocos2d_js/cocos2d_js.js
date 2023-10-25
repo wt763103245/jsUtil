@@ -2,7 +2,7 @@
  * @Author: 萌新王
  * @Date: 2023-07-19 12:23:07
  * @LastEditors: 萌新王
- * @LastEditTime: 2023-10-25 18:08:04
+ * @LastEditTime: 2023-10-25 18:28:03
  * @FilePath: \OneDrive\util\js\cocos2d_js\cocos2d_js.js
  * @Email: 763103245@qq.com
  * @Qq: 763103245
@@ -583,6 +583,46 @@ UtilWt.cc = {
          */
         isObjectValid: (obj) => {
             return cc.sys.isObjectValid(obj);
+        },
+        /**本地储存方法 */
+        localStorage: {
+            /**储存
+             * @param {*} key 
+             * @param {*} value 
+             */
+            setItem: (key, value) => {
+                cc.sys.localStorage.setItem(key, value);
+            },
+            /**读取
+             * @param {*} key 
+             * @returns 
+             */
+            getItem: (key) => {
+                return cc.sys.localStorage.getItem(key);
+            },
+            //存储int值
+            setInt : function(key, value) {
+                cc.sys.localStorage.setItem(key, value.toString());
+            },
+            //获取int值
+            getInt : function(key, def=undefined) {
+                let num = Number(cc.sys.localStorage.getItem(key))
+                return isNaN(num) ? def : num;
+            },
+            //存储bool值
+            setBool : function(key, value) {
+                cc.sys.localStorage.setItem(key,value.toString());
+            },
+            //获取bool值
+            getBool : function(key, def=undefined) {
+                let bool = cc.sys.localStorage.getItem(key);
+                if (bool == "true") {
+                    return true;
+                } else if (bool == "false") {
+                    return false;
+                };
+                return def;
+            },
         },
     },
     /**声音 */
