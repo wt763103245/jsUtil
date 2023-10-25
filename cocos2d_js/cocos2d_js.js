@@ -2,8 +2,8 @@
  * @Author: 萌新王
  * @Date: 2023-07-19 12:23:07
  * @LastEditors: 萌新王
- * @LastEditTime: 2023-10-24 20:13:17
- * @FilePath: \OneDrive\util\js\cocos2d_js.js
+ * @LastEditTime: 2023-10-25 18:08:04
+ * @FilePath: \OneDrive\util\js\cocos2d_js\cocos2d_js.js
  * @Email: 763103245@qq.com
  * @Qq: 763103245
  */
@@ -1154,3 +1154,13 @@ UtilWt.Json = {
         return JSON.stringify(obj);
     },
 }
+/**textureCache相关，图片资源缓存 */
+UtilWt.textureCache = {
+    /**获得缓存中的图片资源（？可能是图片的路径）
+     * @param {String} path 图片资源相对路径
+     * @returns {String|*} ？图片路径
+     */
+    addImage: (path) => {
+        return cc.textureCache.addImage(path);
+    },
+};
