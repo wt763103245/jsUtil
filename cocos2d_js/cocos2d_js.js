@@ -8,8 +8,6 @@
  * @Qq: 763103245
  */
 //Ctrl+Win+i    添加页眉注释
-// import { notDeepEqual } from "assert";
-import { cocos2dJs } from "./class.js"
 /**工具类
  * @param {object} UtilWt
  */
@@ -776,7 +774,16 @@ UtilWt.ccui = {
                 },
             }
         }
-    }
+    },
+    /**@type {ccui.Widget} ccui控件 */
+    Widget: {
+        /**@type {Number} 触摸开始 */
+        TOUCH_BEGAN: ccui.Widget.TOUCH_BEGAN,
+        /**@type {Number} 触摸中 */
+        TOUCH_MOVED: ccui.Widget.TOUCH_MOVED,
+        /**@type {Number} 触摸结束 */
+        TOUCH_ENDED: ccui.Widget.TOUCH_ENDED,
+    },
 }
 /**MjClient专用 */
 UtilWt.MjClient = {
