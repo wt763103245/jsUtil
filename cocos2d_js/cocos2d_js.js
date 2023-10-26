@@ -58,7 +58,7 @@ UtilWt.Class = {
         /**未设定值 */
         undefine: "undefine",
     }
-}
+};
 /**时间 */
 UtilWt.Time = {
     /**js Date类操作 */
@@ -154,7 +154,7 @@ UtilWt.Time = {
     clearInterval: (id) => {
         clearInterval(id);
     },
-}
+};
 /**数据 */
 UtilWt.Data = {
     /**判断object里面是否存在某个值
@@ -181,7 +181,7 @@ UtilWt.Data = {
         }
         return false;
     }
-}
+};
 /**log日志打印 */
 UtilWt.Log = {
     /**cocos2d-js打印日志的方法
@@ -196,7 +196,7 @@ UtilWt.Log = {
             console.log(logStr);
         };
     },
-}
+};
 /**cocos2d-js */
 UtilWt.cocos2d = {
     /**创建一个ui
@@ -269,7 +269,7 @@ UtilWt.cocos2d = {
     _unscheduleUpdate: () => {
         this.unscheduleUpdate();
     },
-}
+};
 /**cocos2d-js cc */
 UtilWt.cc = {
     /**节点 */
@@ -694,7 +694,7 @@ UtilWt.ccs = {
         }
         UtilWt.Log.cocos2dJs("载入uiJson文件： " + uiJsonPath + " 失败。传入路径字符串有误");
     }
-}
+};
 /**cocos2d-js ccui，基本上ccui类的对象都算是cc.Node对象 */
 UtilWt.ccui = {
     Node: {
@@ -806,7 +806,7 @@ UtilWt.ccui = {
         /**@type {Number} 触摸结束 */
         TOUCH_ENDED: ccui.Widget.TOUCH_ENDED,
     },
-}
+};
 /**MjClient专用 */
 UtilWt.MjClient = {
     /**显示提示文本
@@ -861,7 +861,7 @@ UtilWt.MjClient = {
         }
         UtilWt.Log.cocos2dJs("获取app类型失败。客户端可能不存在或者未加载完毕\nMjClient.getAppType() 不存在");
     },
-}
+};
 /**数组操作，列表 */
 UtilWt.Array = {
     /**列表操作，会改变原字符串
@@ -881,7 +881,7 @@ UtilWt.Array = {
     push: (list = [], addItem) => {
         list.push(addItem);
     },
-}
+};
 /**方法 */
 UtilWt.Function = {
     /**方法重用
@@ -901,7 +901,7 @@ UtilWt.Function = {
     call: (func, argsObject = {}) => {
         return func.call(argsObject);
     },
-}
+};
 /**字符串 */
 UtilWt.String = {
     /**截取字符串
@@ -1071,7 +1071,7 @@ UtilWt.String = {
         // console.log(fileName); // 输出
         return fileName;
     },
-}
+};
 /**对象 */
 UtilWt.Object = {
     /**像对象obj中添加属性keyStr，并设置数据描述运行符
@@ -1086,7 +1086,7 @@ UtilWt.Object = {
     defineProperty: (obj, keyStr, dataDict) => {
         Object.defineProperty(obj, keyStr, dataDict);
     },
-}
+};
 /**功能 */
 UtilWt.Func = {
     /**鼠标按下拖动功能，控件中心点跟随鼠标移动
@@ -1212,7 +1212,7 @@ UtilWt.Func = {
             }
         );
     },
-}
+};
 /**Json相关 */
 UtilWt.Json = {
     /**字符串输出对象
@@ -1222,4 +1222,4 @@ UtilWt.Json = {
     stringify: function(obj) {
         return JSON.stringify(obj);
     },
-}
+};
