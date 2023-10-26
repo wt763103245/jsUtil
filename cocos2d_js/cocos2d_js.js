@@ -2,7 +2,7 @@
  * @Author: 萌新王
  * @Date: 2023-07-19 12:23:07
  * @LastEditors: 萌新王
- * @LastEditTime: 2023-10-25 18:39:11
+ * @LastEditTime: 2023-10-26 16:08:07
  * @FilePath: \OneDrive\util\js\cocos2d_js\cocos2d_js.js
  * @Email: 763103245@qq.com
  * @Qq: 763103245
@@ -658,7 +658,29 @@ UtilWt.cc = {
             UtilWt.Log.cocos2dJs("拷贝对象： " + obj + " 失败。对象不存在");
         };
     },
-}
+    /**textureCache相关，图片资源缓存 */
+    textureCache: {
+        /**获得缓存中的图片资源
+         * @param {String} path 图片资源相对路径
+         * @returns {String|cc.Texture2D} 文件名、矩形：纹理
+         */
+        addImage: (path) => {
+            return cc.textureCache.addImage(path);
+        },
+    },
+    /**矩形区域 */
+    Rect: {
+        new: function (x, y, width, height) {
+            return new cc.Rect(x, y, width, height);
+        },
+    },
+    /**大小 */
+    size: {
+        new: function (width, height) {
+            return new cc.size(width, height);
+        },
+    },
+};
 /**cocos2d-js ccs */
 UtilWt.ccs = {
     /**载入uiJson文件，用来创建对应ui界面
@@ -1201,13 +1223,3 @@ UtilWt.Json = {
         return JSON.stringify(obj);
     },
 }
-/**textureCache相关，图片资源缓存 */
-UtilWt.textureCache = {
-    /**获得缓存中的图片资源
-     * @param {String} path 图片资源相对路径
-     * @returns {String|cc.Texture2D} 文件名、矩形：纹理
-     */
-    addImage: (path) => {
-        return cc.textureCache.addImage(path);
-    },
-};
